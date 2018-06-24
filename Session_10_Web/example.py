@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+mlab.connect()
+
 
 @app.route('/html')
 def index():

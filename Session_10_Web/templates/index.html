@@ -23,13 +23,16 @@
         <tbody>
             {% for s in all_service %}
             <tr>
-                <td>{{ loop.index}}</td>
+                <td>{{ loop.index }}</td>
                 <td>s.name</td>
                 <td>s.dob</td>
                 <td>s.gender</td>
                 <td>s.phone_number</td>
                 <td>s.address</td>
-                <td>s.status</td>
+                <td>{% if s.status == True %}
+                    Busy
+                    {}
+                </td>
                 <!-- <td>7</td> -->
             </tr>
             {% endfor %}
