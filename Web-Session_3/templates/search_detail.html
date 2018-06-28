@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detail</title>
+</head>
+<body><div>
+        {% if service_detail.gender == 0 %}
+        <img src = "../static/image/chipu.jpg" alt =""/>
+        {% else %}
+        <img src = "../static/image/phamnhatvuong.jpg" alt =""/>
+        {% endif %}
+    </div>
+    <h1>Chi tiet tim hieu them</h1>
+    <p>Tên: {{service_detail.name}}</p>
+    <p>Yob: {{service_detail.yob}}</p>
+    <p> Giới tính: 
+        {%if service_detail.gender == 1 %}
+        Nam
+        {% else %}
+        Nữ
+        {% endif %}
+    </p>
+    <p>Height: {{service_detail.height}}</p>
+    <p>Phone: {{service_detail.phone}}</p>
+    <p>Address: {{service_detail.address}}</p>
+    <p>Status: {{service_detail.status}}</p>
+    <p>Description: {{service_detail.description}}</p>
+    <p>Measurement: {{service_detail.measurement}}</p>
+     
+
+
+</body>
+</html>
+
