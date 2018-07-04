@@ -1,0 +1,32 @@
+.bg-gray {
+    background-color: gray;
+}
+
+
+.m-10px {
+    margin: 10px;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.h-300px {
+    height: 300px;
+}
+
+.w-200px {
+    width: 200px
+}
+
+.h-1000px {
+    height: 1000px;
+}
+
+#flex-box {
+    display: flex;
+    /* flex-flow: row nowrap; */
+    /* justify-content: space-around; */
+    align-items: flex-end;
+   
+}
